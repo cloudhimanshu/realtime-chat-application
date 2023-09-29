@@ -1,0 +1,142 @@
+.logo{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+body{
+    font-family: sans-serif;
+    background-color: darkslategray;
+    background-repeat: no-repeat; 
+    margin: auto;
+    height: 110px;
+    width: 1023px;
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-family: sans-serif ;
+    display:inline;   
+}
+
+/* Style for the container holding the messages */
+.container {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Allow the container to adjust to window size */
+    margin: 10px auto; /* Center the container horizontally */
+    backdrop-filter: blur(10px); /* Apply a blur filter to create a frosted glass effect */
+    border-radius: 50px; /* Optionally add some border-radius for a rounded look */
+    padding: 120px; /* Optionally add padding for content */
+    position: relative; /* Set the position to relative */
+}
+
+
+  
+  /* Style for the chat message */
+  .message {
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    max-width: 80%;
+  }
+  
+  /* Style for messages from the left (received messages) */
+  .message.left {
+    background-color: #146756; /* Background color for received messages */
+    align-self: flex-start;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  /* Style for the sender's name (e.g., "Mark") */
+  .message.left::before {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Style for messages from the right (sent messages) */
+  .message.right {
+    font-family: sans-serif;
+    background-color: #637612; /* Background color for sent messages */
+    color: #ffffff; /* Text color for sent messages */
+    align-self: flex-end;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  /* Style for the sender's name (e.g., "You") for sent messages */
+  .message.right::before {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Style for the time or date stamp below each message */
+  .timestamp {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 5px;
+    text-align: right;
+  }
+  
+  /* Styles for the chat input bar container */
+  #send-container{
+    display:block;
+    margin:auto;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+}
+.send {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the attachment button (moved to the right) */
+.attachment-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ebebeb; /* White color for the button */
+}
+
+/* Style for the text input field */
+#messageInp {
+    width: 82%;
+    flex: 1;
+    padding: 10px;
+    border: 2px solid ;
+    outline: none;
+    border-radius: 25px;
+    margin-left: auto; /* Auto margin to center the input field */
+    margin-right: auto; /* Auto margin to center the input field */
+    font-size: 14px;
+    background-color: #ffffff; /* White input field */
+}
+
+
+/* Style for the send button */
+.send-button {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover effect for the send button */
+.send-button:hover {
+    background-color: #e64a19;
+}
