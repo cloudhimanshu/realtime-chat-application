@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8000');
+const socket = io('http://192.168.0.100:3000');
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');
 const messageContainer = document.querySelector(".container");
@@ -15,7 +15,6 @@ const append = (message, position) => {
     if(position == 'left'){
         audio.play();
     }
-}
 form.addEventListener(`submit`, (e)=>{
  e.preventDefault();
  const message = messageInput.value;   

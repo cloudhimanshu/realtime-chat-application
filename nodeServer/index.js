@@ -1,4 +1,4 @@
-const io = require('socket.io')(8000);
+const io = require('socket.io')(3000);
 const users = {};
 const express = require('express');
 const cors = require('cors'); // Import the cors package

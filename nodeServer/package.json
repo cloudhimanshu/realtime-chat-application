@@ -1,10 +1,10 @@
 {
   "name": "nodeserver",
   "version": "1.0.0",
-  "description": "This is a node server for our realtime chat based application ",
+  "description": "This is a node server for our realtime chat-based application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "author": "Himanshu Kaushik",
   "license": "ISC",
